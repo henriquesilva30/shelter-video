@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
+    <style>
+        /* Estilos para garantir que o vídeo ocupe toda a tela */
+        html, body {
+            margin: 0; /* Remove margens */
+            padding: 0; /* Remove preenchimentos */
+            height: 100%; /* Garantir que o corpo ocupe toda a altura da tela */
+            overflow: hidden; /* Impede barras de rolagem */
+        }
+
+        video {
+            width: auto; /* A largura do vídeo será proporcional */
+            height: 100%; /* A altura do vídeo ocupará toda a tela */
+            object-fit: cover; /* Garante que o vídeo cubra toda a área, sem distorcer */
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    
-    <!-- Video embutido -->
     <video controls autoplay muted loop>
         <source src="plants.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
