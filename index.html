@@ -13,7 +13,6 @@
             overflow: hidden; /* Impede barras de rolagem */
         }
 
-        /* Contêiner do vídeo */
         .container-col-video {
             display: flex;
             flex-direction: column;
@@ -29,19 +28,14 @@
             height: 100%;
             object-fit: cover; /* Garante que o vídeo cubra toda a área, sem distorcer */
         }
-
-        /* Ajuste para o iframe */
-        iframe {
-            width: 100%; /* O iframe ocupa 100% da largura do contêiner */
-            height: 100%; /* O iframe ocupa 100% da altura do contêiner */
-            border: none; /* Remove a borda do iframe */
-            object-fit: cover; /* Garante que o conteúdo do iframe preencha o espaço sem distorcer */
-        }
     </style>
 </head>
 <body>
     <div class="container-col-video">
-        <iframe class="full-video" src="https://henriquesilva30.github.io/shelter-video/" title="Video" loading="lazy" />
+        <video controls autoplay muted loop>
+            <source src="plants.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
     </div>
 </body>
 </html>
