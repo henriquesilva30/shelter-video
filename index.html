@@ -8,54 +8,17 @@ body, html {
   position: relative;
 }
 
-        
-.container-main{
-  display: flex;
-  height: auto;
-  width: auto;
-}
-
-        
-.container-col-1,.container-col-2,.container-col-3{
-  display: flex;
-  flex-direction: column;
-  max-height: 100vh;
-  width: 34%;
-  background-color: var(--camel);
-  padding:2.1875rem;
-}
-
-.container-col-1, .container-col-2{
-  padding:0px;
-}
-
-.container-col-2{
-  border: 2px solid red;
-}
-
-.container-col-2 .full-video {
-  height:100vh;
-  width:100%;
-}
-
+  
 .full-video {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover; 
 }
         
       
     </style>
-        <div>
-     <div class="container-main">
-      <div class="container-col-1">
-      </div>
-      <div class="container-col-2">
+     
           <video controls autoplay muted loop>
             <source src="plants.mp4" type="video/mp4">
         </video>
-      </div>
-      <div class="container-col-3">
-      </div>
-     </div>
-    </div>
+      
