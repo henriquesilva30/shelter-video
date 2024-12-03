@@ -1,34 +1,61 @@
 
     <style>
-        /* Estilos para garantir que o vídeo ocupe toda a tela */
-        html, body {
-            margin: 0; /* Remove margens */
-            padding: 0; /* Remove preenchimentos */
-            height: 100%; /* Garantir que o corpo ocupe toda a altura da tela */
-            overflow: hidden; /* Impede barras de rolagem */
-        }
+    
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; 
+  position: relative;
+}
 
-        .container-col-video {
-            display: flex;
-            flex-direction: column;
-            height: 100vh; /* Ocupa 100% da altura da tela */
-            width: 100%; /* Ocupa 100% da largura */
-            justify-content: center;
-            align-items: center;
-        }
+        
+.container-main{
+  display: flex;
+  height: auto;
+  width: auto;
+}
 
-        /* Estilos do vídeo */
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Garante que o vídeo cubra toda a área, sem distorcer */
-        }
+        
+.container-col-1,.container-col-2,.container-col-3{
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 34%;
+  background-color: var(--camel);
+  padding:2.1875rem;
+}
+
+.container-col-1, .container-col-2{
+  padding:0px;
+}
+
+.container-col-2{
+  border: 2px solid red;
+}
+
+.container-col-2 .full-video {
+  height:100vh;
+  width:100%;
+}
+
+.full-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+        
+      
     </style>
-        <div class='container-col-video'>
-            
-        <video controls autoplay muted loop>
+        <div>
+     <div class="container-main">
+      <div class="container-col-1">
+      </div>
+      <div class="container-col-2">
+          <video controls autoplay muted loop>
             <source src="plants.mp4" type="video/mp4">
-            Seu navegador não suporta a tag de vídeo.
         </video>
-        </div>
-
+      </div>
+      <div class="container-col-3">
+      </div>
+     </div>
+    </div>
