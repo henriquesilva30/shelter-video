@@ -8,45 +8,18 @@ body, html {
   position: relative;
 }
 
-        
-.container-main-iframe{
-  display: flex;
-  height: auto;
-  width: auto;
-}
 
-        
-.container-col-1-iframe,.container-col-2-iframe,.container-col-3-iframe{
-  display: flex;
-  flex-direction: column;
-  max-height: 100vh;
-  width: 34%;
-  background-color: var(--camel);
-  padding:2.1875rem;
-}
-
-.container-col-1-iframe, .container-col-2-iframe{
-  padding:0px;
-}
-
-
-.container-col-2-iframe .full-video-iframe {
-  height:100vh;
-  width:100%;
-}
 
 .full-video-iframe {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover; 
 }
         
       
     </style>
     
-      <div class="container-col-2-iframe">
           <video controls autoplay muted loop>
-            <source src="plants.mp4" type="video/mp4">
+            <source class="full-video-iframe" src="plants.mp4" type="video/mp4">
         </video>
-      </div>
       
