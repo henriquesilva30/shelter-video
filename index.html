@@ -12,7 +12,12 @@
             height: 100%; /* Garantir que o corpo ocupe toda a altura da tela */
             overflow: hidden; /* Impede barras de rolagem */
         }
-
+        .container-col-video{
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+            width: 34%;
+        }
         video {
             width: auto; /* A largura do vídeo será proporcional */
             height: 100%; /* A altura do vídeo ocupará toda a tela */
@@ -21,9 +26,11 @@
     </style>
 </head>
 <body>
-    <video controls autoplay muted loop>
-        <source src="plants.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
-    </video>
+    <div class='container-col-video'>
+        <video controls autoplay muted loop>
+            <source src="plants.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
 </body>
 </html>
